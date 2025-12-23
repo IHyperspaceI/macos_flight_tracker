@@ -1,6 +1,7 @@
-env
+bin
+include
+lib
 server
 data
 *.pyc
 **/.DS_Store
-environment.sh

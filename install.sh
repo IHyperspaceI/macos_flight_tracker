@@ -10,8 +10,13 @@ cd dump1090
 make
 
 echo "Installing python requirements";
+pip3 install virtualenv
+sudo /usr/bin/easy_install virtualenv
+
 virtualenv env && . env/bin/activate
-pip install -r src/requirements.txt
+
+cd src
+pip3 install -r requirements.txt
 
 
 echo "Installation complete";
